@@ -28,3 +28,33 @@ if (
 } else {
   alert("errore");
 } */
+
+/* Gioco dei dadi 
+
+let dadoUtente = Math.floor(Math.random() * 6) + 1;
+let dadoComputer = Math.floor(Math.random() * 6) + 1;
+prompt("Schiacci un bottone per giocare");
+let user = console.log(dadoUtente);
+let computer = console.log(dadoComputer);
+
+if (dadoUtente > dadoComputer) {
+  alert("Hai vinto");
+} else if (dadoUtente === dadoComputer) {
+  alert("Pareggio");
+} else {
+  alert("Hai perso");
+} */
+
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+console.log(randomNumber);
+let numeroUtente = prompt("Indovina il numero da 1 a 10");
+console.log(numeroUtente);
+let numeroUtenteNum = Number(numeroUtente);
+
+if (numeroUtenteNum === randomNumber) {
+  alert("Hai indovinato");
+} else if (numeroUtenteNum < randomNumber) {
+  alert("Prova più alto");
+} else if (numeroUtenteNum > randomNumber) {
+  alert("Prova più basso");
+}
